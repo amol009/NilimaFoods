@@ -1,271 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vaishnavi Flowers Library</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --primary: #e75480;
-  --secondary: #ffc2d1;
-  --bg: #fff4f8;
-  --card: #ffffff;
-  --dark: #333;
-}
-
-* {
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--dark);
-}
-
-/* HEADER */
-header {
-  background: linear-gradient(135deg, #ff8fab, #ffc2d1);
-  color: #fff;
-  text-align: center;
-  padding: 2.5rem 1rem;
-}
-
-header h1 {
-  font-size: 1.9rem;
-  font-weight: 700;
-}
-
-header p {
-  font-size: 1rem;
-  margin-top: 0.6rem;
-}
-
-.badge {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #fff;
-  color: var(--primary);
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
-  font-weight: 600;
-  font-size: 0.85rem;
-}
-
-/* SLIDER */
-.slider {
-  width: 100%;
-  overflow: hidden;
-  margin: 1.5rem auto;
-  border-radius: 18px;
-  background: #fff;
-}
-
-.slider-track {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-}
-
-.slider-track img {
-  min-width: 100%;
-  height: 260px;
-  object-fit: cover;
-}
-
-/* SECTIONS */
-section {
-  padding: 2rem 1rem;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 1.2rem;
-}
-
-.section-title h2 {
-  color: var(--primary);
-  font-size: 1.6rem;
-}
-
-/* CARD */
-.card {
-  background: var(--card);
-  border-radius: 16px;
-  padding: 1.2rem;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-  overflow-x: auto;
-}
-
-/* TABLE */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.9rem;
-}
-
-th, td {
-  padding: 0.6rem;
-  text-align: center;
-}
-
-th {
-  background: var(--secondary);
-  border-radius: 6px;
-}
-
-/* CTA */
-.cta {
-  background: linear-gradient(135deg, #ff8fab, #ffc2d1);
-  color: #fff;
-  text-align: center;
-  padding: 2rem 1rem;
-  border-radius: 20px;
-  margin: 2rem 1rem;
-}
-
-.cta h2 {
-  font-size: 1.6rem;
-}
-
-.cta p {
-  font-size: 1rem;
-}
-
-.cta a {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #fff;
-  color: var(--primary);
-  padding: 0.7rem 1.5rem;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 1.2rem;
-  background: #ffe3ec;
-  font-size: 0.85rem;
-}
-
-/* DESKTOP */
-@media (min-width: 768px) {
-  header h1 { font-size: 2.4rem; }
-  .slider-track img { height: 380px; }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nilima's Food Products</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-<header>
-  <h1>Vaishnavi Flowers Library</h1>
-  <p>Artificial flower arrangements on rent for homes & small events</p>
-  <div class="badge">Artificial Flowers on Rent</div>
-</header>
+  <!-- Header -->
+  <header class="header">
+    <img src="assets/logo.png" alt="Nilima's Food Products" class="logo" />
+    <p class="tagline">Pure. Homemade. No Palm Oil.</p>
+  </header>
 
-<!-- IMAGE SLIDER -->
-<div style="overflow:hidden; border-radius:18px; margin:1.5rem 0;">
-  <div id="flowerSlider" style="display:flex; transition:transform 0.6s ease;">
-    
-    <img src="https://images.unsplash.com/photo-1616627981914-7e20a9c4a5a4?auto=format&fit=crop&w=1200&q=80"
-         style="min-width:100%; height:260px; object-fit:cover;" />
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Bhajani Chakali & Shankarpali</h1>
+    <p class="subtitle">
+      Made using <strong>Gemini Sunflower Oil</strong> & <strong>Gowardhan Ghee</strong>
+    </p>
 
-    <img src="https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80"
-         style="min-width:100%; height:260px; object-fit:cover;" />
+    <div class="badges">
+      <span>🚫 No Palm Oil</span>
+      <span>🧈 Pure Ghee</span>
+      <span>🏠 Homemade</span>
+    </div>
+  </section>
 
-    <img src="https://images.unsplash.com/photo-1598887142486-b9c3b07c4c0b?auto=format&fit=crop&w=1200&q=80"
-         style="min-width:100%; height:260px; object-fit:cover;" />
+  <!-- Products -->
+  <section class="products">
 
-    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=1200&q=80"
-         style="min-width:100%; height:260px; object-fit:cover;" />
+    <div class="product-card">
+      <img src="assets/shankarpali.jpg" alt="Shankarpali">
+      <h2>Shankarpali</h2>
+      <p class="price">₹460 / kg</p>
+    </div>
 
-  </div>
-</div>
+    <div class="product-card">
+      <img src="assets/chakali.jpg" alt="Bhajani Chakali">
+      <h2>Bhajani Chakali</h2>
+      <p class="price">₹560 / kg</p>
+    </div>
 
-<script>
-  const slider = document.getElementById("flowerSlider");
-  let i = 0;
+  </section>
 
-  setInterval(() => {
-    i = (i + 1) % slider.children.length;
-    slider.style.transform = `translateX(-${i * 100}%)`;
-  }, 3500);
-</script>
+  <!-- Delivery -->
+  <section class="delivery">
+    <h3>Home Delivery</h3>
+    <ul>
+      <li>0 – 5 km : ₹20</li>
+      <li>5 – 10 km : ₹30</li>
+      <li>10 – 15 km : ₹50</li>
+    </ul>
+  </section>
 
+  <!-- Contact -->
+  <section class="contact">
+    <h3>Order Now</h3>
+    <p>📞 8805794750 / 9112396557</p>
+    <p>📍 Nanded City, Pune</p>
 
-<section>
-  <div class="section-title">
-    <h2>Small Flower Pot</h2>
-  </div>
-  <div class="card">
-    <table>
-      <tr>
-        <th>Pots</th><th>Day 1</th><th>Day 3</th><th>Day 7</th><th>Day 10</th>
-      </tr>
-      <tr><td>1</td><td>₹50</td><td>₹100</td><td>₹150</td><td>₹180</td></tr>
-      <tr><td>2</td><td>₹90</td><td>₹180</td><td>₹270</td><td>₹330</td></tr>
-      <tr><td>3</td><td>₹130</td><td>₹260</td><td>₹390</td><td>₹470</td></tr>
-    </table>
-  </div>
-</section>
+    <a href="tel:8805794750" class="cta">Call to Order</a>
+  </section>
 
-<section>
-  <div class="section-title">
-    <h2>Medium Flower Pot</h2>
-  </div>
-  <div class="card">
-    <table>
-      <tr>
-        <th>Pots</th><th>Day 1</th><th>Day 3</th><th>Day 7</th><th>Day 10</th>
-      </tr>
-      <tr><td>1</td><td>₹80</td><td>₹150</td><td>₹220</td><td>₹250</td></tr>
-      <tr><td>2</td><td>₹150</td><td>₹280</td><td>₹430</td><td>₹490</td></tr>
-      <tr><td>3</td><td>₹220</td><td>₹410</td><td>₹620</td><td>₹720</td></tr>
-    </table>
-  </div>
-</section>
-
-<section class="cta">
-  <h2>Book Your Flowers 🌸</h2>
-  <p>Flexible rental plans • Quick delivery • Pune</p>
-  <a href="tel:+919762272539">Call +91 9762272539</a>
-</section>
-
-<footer>
-  📍 Pune | © 2026 Vaishnavi Flowers Library
-</footer>
-
-<script>
-  const track = document.getElementById("sliderTrack");
-  const slides = track.children;
-  let index = 0;
-
-  function moveSlide() {
-    index = (index + 1) % slides.length;
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  setInterval(moveSlide, 3500);
-</script>
-
-  <script>
-  const slider = document.getElementById("flowerSlider");
-  let i = 0;
-
-  setInterval(() => {
-    i = (i + 1) % slider.children.length;
-    slider.style.transform = `translateX(-${i * 100}%)`;
-  }, 3500);
-</script>
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Nilima's Food Products</p>
+  </footer>
 
 </body>
 </html>
-
-
